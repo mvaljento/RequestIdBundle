@@ -1,39 +1,42 @@
 {
-    "name": "chrisguitarguy/request-id-bundle",
-    "description": "Add request IDs to to your Symfony requests.",
-    "keywords": ["symfony", "request id"],
-    "license": "MIT",
-    "type": "symfony-bundle",
-    "require": {
-        "php": "^8.2",
-        "symfony/framework-bundle": "^5.4 || ^6.0 || ^7.0",
-        "ramsey/uuid": "^3.9 || ^4.3"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^9.5",
-        "symfony/monolog-bundle": "^3.7",
-        "twig/twig": "^2.7 || ^3.0",
-        "symfony/twig-bundle": "^5.4 || ^6.0 || ^7.0",
-        "symfony/browser-kit": "^5.4 || ^6.0 || ^7.0",
-        "symfony/css-selector": "^5.4 || ^6.0 || ^7.0",
-        "symfony/phpunit-bridge": "^5.4 || ^6.0 || ^7.0",
-        "symfony/yaml": "^5.4 || ^6.0 || ^7.0",
-        "symfony/templating": "^5.4 || ^6.0 || ^7.0",
-        "symfony/monolog-bridge": "^5.4 || ^6.0 || ^7.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Chrisguitarguy\\RequestId\\": "src/"
-        }
-    },
-    "conflict": {
-        "twig/twig": "<2.7"
-    },
-    "config": {
-        "allow-plugins": {
-            "symfony/flex": true,
-            "symfony/runtime": true,
-            "composer/package-versions-deprecated": true
-        }
+  "name": "chrisguitarguy/request-id-bundle",
+  "description": "Add request IDs to to your Symfony requests.",
+  "keywords": [
+    "symfony",
+    "request id"
+  ],
+  "license": "MIT",
+  "type": "symfony-bundle",
+  "require": {
+    "php": ">=8.3",
+    "symfony/framework-bundle": "^5.4 || ^6.0 || ^7.0",
+    "ramsey/uuid": "^3.9 || ^4.3 || 5.x-dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "symfony/monolog-bundle": "^3.7",
+    "twig/twig": "^2.7 || ^3.0",
+    "symfony/twig-bundle": "^5.4 || ^6.0 || ^7.0",
+    "symfony/browser-kit": "^5.4 || ^6.0 || ^7.0",
+    "symfony/css-selector": "^5.4 || ^6.0 || ^7.0",
+    "symfony/phpunit-bridge": "^5.4 || ^6.0 || ^7.0",
+    "symfony/yaml": "^5.4 || ^6.0 || ^7.0",
+    "symfony/templating": "^5.4 || ^6.0 || ^7.0",
+    "symfony/monolog-bridge": "^5.4 || ^6.0 || ^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Chrisguitarguy\\RequestId\\": "src/"
     }
+  },
+  "conflict": {
+    "twig/twig": "<2.7"
+  },
+  "config": {
+    "allow-plugins": {
+      "symfony/flex": true,
+      "symfony/runtime": true,
+      "composer/package-versions-deprecated": true
+    }
+  }
 }
